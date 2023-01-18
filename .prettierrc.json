@@ -6,5 +6,24 @@
     "printWidth": 140,
     "bracketSpacing": true,
     "arrowParens": "avoid",
-    "endOfLine": "auto"
+    "endOfLine": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "vueIndentScriptAndStyle": true,
+    "overrides": [
+        {
+            "files": "*.vue",
+            "options": {
+                "vueIndentScriptAndStyle": true
+            }
+        },
+        {
+            "files": "*.cjs",
+            "options": {
+                "parser": "babel",
+                "singleQuote": false,
+                "semi": false,
+                "trailingComma": "none"
+            }
+        }
+    ]
 }
