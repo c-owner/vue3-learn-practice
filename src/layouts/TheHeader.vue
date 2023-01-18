@@ -34,10 +34,10 @@
 </template>
 
 <script setup>
-    function searchSubmit() {
-        console.log('Search submitted');
-        return;
-    }
+function searchSubmit() {
+    console.log('Search submitted');
+    return;
+}
 </script>
 
 <style scoped></style>
