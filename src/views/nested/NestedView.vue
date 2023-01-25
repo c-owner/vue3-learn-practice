@@ -1,0 +1,16 @@
+<script setup></script>
+
+<template>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <RouterLink to="/nested/one" class="nav-link" active-class="active"> Nested One</RouterLink>
+        </li>
+        <li class="nav-item">
+            <RouterLink to="/nested/two" class="nav-link" active-class="active"> Nested Two</RouterLink>
+        </li>
+        <hr class="my-4" />
+        <RouterView></RouterView>
+    </ul>
+</template>
+
+<style scoped></style>
