@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goListPage = () => {
+    router.push({ name: 'PostList' });
+};
+</script>
 
 <template>
     <div>
@@ -14,7 +22,7 @@
                 <textarea class="form-control" id="content" rows="3"></textarea>
             </div>
             <div class="pt-4">
-                <button type="button" class="btn btn-outline-dark me-2" @click="goBack">목록</button>
+                <button type="button" class="btn btn-outline-dark me-2" @click="goListPage">목록</button>
                 <button type="submit" class="btn btn-primary">저장</button>
             </div>
         </form>
